@@ -3,12 +3,12 @@
 // @description Adds a "Download all" button next to the top right nav bar
 // @version     1
 // @grant       none
-// @license			MIT
+// @license     MIT
 // @require     https://code.jquery.com/jquery-3.5.1.min.js
 // @include     *nyaa.si/*
-// @exclude			*nyaa.si/rules
-// @exclude			*nyaa.si/help
-// @exclude			*nyaa.si/upload
+// @exclude     *nyaa.si/rules
+// @exclude     *nyaa.si/help
+// @exclude     *nyaa.si/upload
 // ==/UserScript==
 
 function magnetAll(){
