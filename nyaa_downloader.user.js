@@ -1,6 +1,7 @@
 // ==UserScript==
 // @name        nyaa.si download all button
 // @description Adds a "Download all" button next to the top right nav bar
+// @homepage    https://github.com/Johnsen92/nyaa_downloader
 // @version     1
 // @grant       none
 // @license     MIT
