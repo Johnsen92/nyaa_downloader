@@ -2,7 +2,9 @@
 // @name        nyaa.si download all button
 // @description Adds a "Download all" button next to the top right nav bar
 // @homepage    https://github.com/Johnsen92/nyaa_downloader
-// @version     1
+// @updateURL   https://openuserjs.org/meta/Johnsen92/nyaa.si_download_all_button.meta.js
+// @downloadURL https://openuserjs.org/install/Johnsen92/nyaa.si_download_all_button.user.js
+// @version     1.0.0
 // @grant       none
 // @license     MIT
 // @require     https://code.jquery.com/jquery-3.5.1.min.js
