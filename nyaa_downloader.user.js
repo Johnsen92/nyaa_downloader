@@ -14,14 +14,27 @@
 // @exclude     *nyaa.si/upload
 // ==/UserScript==
 
+// Emulate click on all/selected magnet links in the search results
 function magnetAll(){
-  $(".torrent-list a").each(function() {
+	$(".torrent-list a").each(function() {
     if(this.href.match("magnet:") != null){
     	this.click();
     }
 	})
 }
 
+// Add checkboxes to every row of the search results
+$("table.torrent-list thead tr").prepend("<th class=\"hdr-select\" style=\"width: 10px\"></td>");
+id = 0;
+$("table.torrent-list tbody tr").each(function(){
+	$(this).addClass("tr_" + id);
+  $(this).prepend("<td class=\"row-select\" style=\"width: 10px\"><input class=\"ck_" + id + "\" type=\"checkbox\"></td>");
+  id++;
+});
+	
+
+
+// Add 'Download all/selected' button to page
 if(document.getElementById("magnet-all") == null){
 	$(".nav.navbar-nav.navbar-right").append("<li><button style=\"margin-top: 9px\" class=\"btn btn-primary\" id=\"magnet-all\">Download all</button></li>");
 	document.getElementById("magnet-all").addEventListener('click', magnetAll, false);
